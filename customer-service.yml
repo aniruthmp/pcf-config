@@ -6,8 +6,6 @@ spring:
     show-sql: false
   datasource:
     driverClassName: com.mysql.jdbc.Driver
-  profiles:
-    active: local
 
 ---
 
