@@ -13,6 +13,8 @@ spring:
     level:
       org.springframework: WARN
       org.hibernate: WARN
+  profiles:
+    active: cloud
       
 eureka:
   instance:
