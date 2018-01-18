@@ -8,6 +8,12 @@ spring:
     eventsCollectionName: events
     snapshotCollectionName: snapshots
 
+axon:
+  amqp:
+    exchange: product.events.fanout.exchange
+    transaction-mode: none
+    durable-messages: true
+    
 external:
   amqp:
     exchange:
