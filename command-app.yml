@@ -1,3 +1,5 @@
+message: Hello from Git
+
 spring:
   application:
     exchange: product.events.fanout.exchange
