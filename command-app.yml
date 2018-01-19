@@ -4,19 +4,18 @@ spring:
   application:
     exchange: product.events.fanout.exchange
     queue: product.default.queue
-    databaseName: products
+#    databaseName: products
     eventsCollectionName: events
     snapshotCollectionName: snapshots
-  data:
-    mongodb:
-      database: ${MONGODB_DATABASE:cqrs_test}
-  jpa:
-    hibernate:
-      ddl-auto: create-drop
-    database-platform: org.hibernate.dialect.MySQLDialect
-    show-sql: false
   datasource:
-    driverClassName: com.mysql.jdbc.Driver
+    testWhileIdle: true
+    validationQuery: SELECT 1
+  jpa:
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      naming:
+        strategy: org.hibernate.cfg.ImprovedNamingStrategy
 
 axon:
   amqp:
