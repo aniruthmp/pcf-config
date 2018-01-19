@@ -10,6 +10,8 @@ spring:
   data:
     mongodb:
       database: ${MONGODB_DATABASE:cqrs_test}
+  datasource:
+    driverClassName: com.mongodb.Mongo
 
 axon:
   amqp:
