@@ -10,8 +10,13 @@ spring:
   data:
     mongodb:
       database: ${MONGODB_DATABASE:cqrs_test}
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    database-platform: org.hibernate.dialect.MySQLDialect
+    show-sql: false
   datasource:
-    driverClassName: com.mongodb.Mongo
+    driverClassName: com.mysql.jdbc.Driver
 
 axon:
   amqp:
