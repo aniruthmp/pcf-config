@@ -2,16 +2,11 @@ message: Hello from Git
 secretMessage: '{cipher}edcb24a39d1e0df8c80ee29cc1d54916861e3886ea5c760bd758a4196f677e10'
 
 spring:
-  application:
-    exchange: product.events.fanout.exchange
-    queue: product.default.queue
-    eventsCollectionName: events
-    snapshotCollectionName: snapshots
   datasource:
     testWhileIdle: true
     validationQuery: SELECT 1
   jpa:
-    database: MYSQL  
+    database: MYSQL
     generate-ddl: true
     show-sql: true
     hibernate:
@@ -23,18 +18,6 @@ spring:
 
 axon:
   amqp:
-    exchange: product.events.fanout.exchange
+    exchange: accountEvents
     transaction-mode: none
     durable-messages: true
-    
-external:
-  amqp:
-    exchange:
-      fanout:
-        auto-delete: false
-    bind:
-      route-key: "*"
-    queue: product.default.queue
-  event-sourcing:
-        events-collection-name: service-events
-        snapshot-collection-name: service-events-snapshots
