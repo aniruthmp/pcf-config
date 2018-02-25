@@ -1,4 +1,5 @@
 message: Hello from Git
+secretMessage: '{cipher}edcb24a39d1e0df8c80ee29cc1d54916861e3886ea5c760bd758a4196f677e10'
 
 spring:
   application:
