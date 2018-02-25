@@ -1,0 +1,13 @@
+secretMessage: "From Git"
+
+---
+
+spring:
+  profiles: cloud
+  cloud:
+    config:
+      enabled: true
+
+eureka:
+  client:
+    enabled: true
