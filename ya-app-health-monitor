@@ -1,0 +1,8 @@
+security:
+  basic:
+    enabled: false
+
+monitor:
+  - account-service
+  - dummy
+  - customer-service
