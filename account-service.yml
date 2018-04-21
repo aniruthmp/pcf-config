@@ -14,7 +14,7 @@ spring:
   # datasource:
   #   driverClassName: com.mysql.jdbc.Driver
 
-message: "Git Message"
+message: "Git Message 1"
 secretMessage: '{cipher}edcb24a39d1e0df8c80ee29cc1d54916861e3886ea5c760bd758a4196f677e10'
 
 eureka:
