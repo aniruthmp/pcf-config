@@ -1,13 +1,18 @@
 spring:
   main:
     banner-mode: "off"
-  jpa:
-    hibernate:
-      ddl-auto: create-drop
-    database-platform: org.hibernate.dialect.MySQLDialect
-    show-sql: false
   datasource:
-    driverClassName: com.mysql.jdbc.Driver
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:db;DB_CLOSE_DELAY=-1
+    username: sa
+    password: sa
+  # jpa:
+  #   hibernate:
+  #     ddl-auto: create-drop
+  #   database-platform: org.hibernate.dialect.MySQLDialect
+  #   show-sql: false
+  # datasource:
+  #   driverClassName: com.mysql.jdbc.Driver
 
 message: "Git Message"
 secretMessage: '{cipher}edcb24a39d1e0df8c80ee29cc1d54916861e3886ea5c760bd758a4196f677e10'
