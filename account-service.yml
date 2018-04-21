@@ -16,3 +16,10 @@ spring:
 
 message: "Git Message"
 secretMessage: '{cipher}edcb24a39d1e0df8c80ee29cc1d54916861e3886ea5c760bd758a4196f677e10'
+
+eureka:
+  client:
+    service-url:
+      defaultZone: "https://eureka-server-ani.cfapps.io/"
+  instance:
+    prefer-ip-address: true
