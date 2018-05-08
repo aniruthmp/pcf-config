@@ -1,4 +1,4 @@
-AUTH_SERVER: https://pivot-aparthasarathy.login.run.pcfbeta.io/
+AUTH_SERVER: https://pivot-aparthasarathy.login.run.pcfbeta.io
 
 security:
   basic:
