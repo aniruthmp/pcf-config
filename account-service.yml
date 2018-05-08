@@ -6,7 +6,7 @@ management:
   security:
     enabled: false
 
-ssoScope: pivotal
+ssoScope: spring
 
 ---
 
