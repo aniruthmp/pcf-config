@@ -1,6 +1,8 @@
 # logging.level.: DEBUG
+---
 
 spring:
+  profiles: original
   jpa:
     hibernate:
       ddl-auto: create-drop
@@ -12,12 +14,7 @@ spring:
 ---
 
 spring:
-  profiles: local
-  jpa:
-    hibernate:
-      ddl-auto: create-drop
-  datasource:
-    driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/root
-    username: root
-    password: password
+  profiles: sso
+eureka:
+  client:
+    enabled: true
