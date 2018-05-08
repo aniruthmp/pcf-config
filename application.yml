@@ -1,4 +1,5 @@
 AUTH_SERVER: https://pivot-aparthasarathy.login.run.pcfbeta.io
+ssoScope: pivotal
 
 security:
   basic:
