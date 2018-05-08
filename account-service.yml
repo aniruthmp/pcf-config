@@ -1,25 +1,32 @@
+security:
+  basic:
+    enabled: false
+
+management:
+  security:
+    enabled: false
+
+---
+
 spring:
-  main:
-    banner-mode: "off"
-  datasource:
-    driver-class-name: org.h2.Driver
-    url: jdbc:h2:mem:db;DB_CLOSE_DELAY=-1
-    username: sa
-    password: sa
-  # jpa:
-  #   hibernate:
-  #     ddl-auto: create-drop
-  #   database-platform: org.hibernate.dialect.MySQLDialect
-  #   show-sql: false
-  # datasource:
-  #   driverClassName: com.mysql.jdbc.Driver
-
-message: "Git Message 1"
-secretMessage: '{cipher}edcb24a39d1e0df8c80ee29cc1d54916861e3886ea5c760bd758a4196f677e10'
-
+  profiles: local
+  cloud:
+    config:
+      enabled: false
 eureka:
   client:
-    service-url:
-      defaultZone: "https://eureka-server-ani.cfapps.io/"
-  instance:
-    prefer-ip-address: true
+    enabled: false
+server:
+  port: 8001
+
+---
+
+spring:
+  profiles: sso
+  cloud:
+    config:
+      enabled: true
+eureka:
+  client:
+    enabled: false
+

@@ -1,4 +1,7 @@
-# logging.level.: DEBUG
+management:
+  security:
+    enabled: false
+    
 ---
 
 spring:
