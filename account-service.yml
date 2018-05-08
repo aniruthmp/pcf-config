@@ -6,8 +6,6 @@ management:
   security:
     enabled: false
 
-ssoScope: spring
-
 ---
 
 spring:
