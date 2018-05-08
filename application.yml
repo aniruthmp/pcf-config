@@ -25,13 +25,13 @@ spring:
       org.springframework: WARN
       org.axonframework: INFO
       org.hibernate: WARN
-  profiles:
-    active: cloud
       
 eureka:
   instance:
     leaseRenewalIntervalInSeconds: 1
     leaseExpirationDurationInSeconds: 2
+  client:
+    enabled: true
 
 ribbon:
   eureka:
