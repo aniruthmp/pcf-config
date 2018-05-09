@@ -26,3 +26,4 @@ security:
 eureka:
   client:
     enabled: true
+hystrix.command.default.execution.isolation.strategy: SEMAPHORE
