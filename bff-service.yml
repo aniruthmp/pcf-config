@@ -15,8 +15,8 @@ management:
     enabled: false
 
 AUTH_SERVER: https://pivot-aparthasarathy.login.run.pcfbeta.io/
-CUSTOMER_SERVICE_URL: "https://ani-customer-service.pcfbeta.io/customers/search/findByCustomerNumber?customerNumber="
-ACCOUNT_SERVICE_URL: "https://ani-account-service.pcfbeta.io//accounts/customer?customerNumber="
+CUSTOMER_SERVICE_URL: "https://ani-customer-service.pcfbeta.io/customers/search/findByCustomerNumber?customerNumber={customerNumber}"
+ACCOUNT_SERVICE_URL: "https://ani-account-service.pcfbeta.io/accounts/customer?customerNumber={customerNumber}"
 
 ---
 
